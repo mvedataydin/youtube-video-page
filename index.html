@@ -2,38 +2,98 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
 
-    <title>Youtube | Video</title>
+    <title>Estas Tonne - The Song of the Golden Dragon - Youtube</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <a>Sidebar</a><a>Youtube</a>
-        <form><input /><button>Submit</button></form>
-        <a>Stream</a>
-        <a>Square</a>
-        <a>Share</a>
-        <a>Bell</a>
-        <a>User</a>
+        <span class="nav-left">
+          <span class="menu-bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </span>
+          <img class="youtube-logo" src="img/Untitled.png" />
+          <sup>TR</sup>
+        </span>
+        <span class="form-container">
+          <input class="search-input" />
+
+          <button class="search-button">&#128269;</button>
+        </span>
+        <span class="right-nav">
+          <img class="right-nav-items" src="img/right-nav.png" />
+        </span>
       </nav>
     </header>
     <main>
       <section>
-        <div id="main-video"></div>
-        <div id="main-info"></div>
-        <div id="main-info"></div>
-        <div id="main-comment-form"><input /></div>
+        <div id="main-video">
+          <iframe
+            width="100%"
+            height="450px"
+            src="https://www.youtube.com/embed/7gphiFVVtUI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="main-primary-info">
+          <div class="main-video-name">
+            <h1>Estas Tonne - The Song of the Golden Dragon</h1>
+          </div>
+          <div class="main-info-container">
+            <span class="main-video-views">67,645,387 views</span>
+            <span class="main-video-rates">
+              <a class="thumbs-up-val">10 </a>
+              <a class="thumbs-down-val"> 0 </a>
+            </span>
+            <span class="main-video-share">Share</span>
+            <span class="main-video-save">Save</span>
+            <span class="main-video-options">-</span>
+          </div>
+        </div>
+        <div id="main-secondary-info">
+          <div class="main-first-row">
+            <div class="main-author-avatar">avatar</div>
+            <div class="main-author">LiebensteinMovies</div>
+            <button>Subscribe</button>
+          </div>
+          <div class="description">Tour Dates on his website</div>
+        </div>
+        <div id="main-comment-form">
+          <div class="comment-header">
+            <span class="comment-counter">36,171 Comments</span>
+            <span class="sort-button">Sort-Icon</span>
+            <span class="sort-text">SORT BY</span>
+          </div>
+          <div class="comment-form-container">
+            <span>Avatar</span>
+            <div><input /></div>
+          </div>
+        </div>
         <div id="main-comments">
           <div class="comment">
             <div class="author-avatar"></div>
-            <div class="author-username"></div>
-            <div class="author-comment"></div>
-            <div class="comment-toolbar"></div>
+            <div>
+              <div class="author-username">Commenter Avatar</div>
+              <div class="author-comment">
+                Hello i am commenter and this is my comment
+              </div>
+              <div class="comment-toolbar">10k like 1k dislike REPLY</div>
+            </div>
+            <div class="comment-action-button"></div>
           </div>
+          <div class="sub-comments"><a>View 33 replies</a><a>></a></div>
         </div>
       </section>
       <aside>
