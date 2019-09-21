@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="./styles/normalise.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
 
@@ -10,8 +10,62 @@
   </head>
 
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav>
+        <a>Sidebar</a><a>Youtube</a>
+        <form><input /><button>Submit</button></form>
+        <a>Stream</a>
+        <a>Square</a>
+        <a>Share</a>
+        <a>Bell</a>
+        <a>User</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="main-video"></div>
+        <div id="main-info"></div>
+        <div id="main-info"></div>
+        <div id="main-comment-form"><input /></div>
+        <div id="main-comments">
+          <div class="comment">
+            <div class="author-avatar"></div>
+            <div class="author-username"></div>
+            <div class="author-comment"></div>
+            <div class="comment-toolbar"></div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div id="autoplay-container">
+          <div class="autoplay-header">
+            <div>UpNext</div>
+            <div>Autoplay</div>
+            <div>Toggle</div>
+          </div>
+          <div class="autoplay-video">
+            <img />
+            <div class="metadata">
+              <a>
+                <div class="autoplay-video-title"></div>
+                <div class="autoplay-video-author"></div>
+                <div class="autoplay-video-views"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-video">
+          <img />
+          <div class="metadata">
+            <a>
+              <div class="sidebar-video-title"></div>
+              <div class="sidebar-video-author"></div>
+              <div class="sidebar-video-views"></div>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
     <footer></footer>
   </body>
 </html>
