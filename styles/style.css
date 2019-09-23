@@ -2,6 +2,12 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+a {
+  color: #065fd4;
+}
+img {
+  cursor: pointer;
+}
 /**
 *** Header *** 
 */
@@ -49,6 +55,7 @@ sup {
   position: static;
   width: 90px;
   height: 28px;
+  cursor: pointer;
 }
 
 .nav-left {
@@ -70,20 +77,31 @@ form-container {
   padding: 2px 6px;
 }
 .search-input {
+  font-size: 16px;
+  color: #111111;
   width: 45%;
   height: 100%;
-  padding: 1px;
+  padding: 1px 0 0 4px;
   margin-left: 4px;
 }
+.search-input:focus {
+  outline: 0.5px solid rgb(101, 60, 248);
+}
+
 .search-button {
   width: 5%;
   height: 32px;
   border: 1px solid rgb(186, 186, 186);
   background-color: #f8f8f8;
+  outline: none;
+}
+.search-button:focus {
+  outline: 0.5px solid rgb(101, 60, 248);
 }
 .right-nav {
   float: right;
   width: 24%;
+  cursor: pointer;
 }
 /** 
 *** Main ***
@@ -102,6 +120,214 @@ section {
   float: right;
   height: 2000px;
 }
+h1 {
+  font-size: 23px;
+  font-weight: 400;
+}
+#main-primary-info {
+  padding: 20px 0 8px 0;
+  border-bottom: 0.5px solid rgb(186, 186, 186);
+}
+#main-secondary-info {
+  padding: 10px 0 20px 0;
+  border-bottom: 0.5px solid rgb(186, 186, 186);
+}
+.main-info-container {
+  height: 41px;
+}
+.main-video-views {
+  color: #606060;
+  float: left;
+  margin-top: 10px;
+}
+
+.main-video-date {
+  padding-left: 4px;
+  color: #606060;
+  float: left;
+  margin-top: 10px;
+}
+.video-rates {
+  float: right;
+}
+.subscribe-button {
+  color: #fff;
+  height: 36px;
+  padding: 10px 16px;
+  margin: 0 4px;
+  background-color: #cc0000;
+  float: right;
+}
+.main-first-row {
+  margin-bottom: 12px;
+  padding-top: 16px;
+}
+.main-author-avatar {
+  position: absolute;
+  width: 65px;
+  height: 50px;
+}
+.main-author {
+  cursor: pointer;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sub-counter {
+  margin-left: 5px;
+  color: #606060;
+  font-size: 13px;
+  margin-left: 60px;
+}
+.description {
+  font-size: 15px;
+
+  margin-left: 60px;
+}
+.avatar {
+  border-radius: 50%;
+}
+.description-text {
+  padding: 25px 0;
+}
+.description-toggle {
+  cursor: pointer;
+
+  color: #606060;
+}
+#main-comment-form {
+  margin: 24px 0 32px 0;
+}
+.comment-header {
+  height: 32px;
+}
+.comment-counter {
+  margin-right: 35px;
+}
+.sort-button {
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.bar-top {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(161, 159, 159);
+  margin: 4px 0;
+}
+.bar-mid {
+  width: 12px;
+  height: 2px;
+  background-color: rgb(161, 159, 159);
+  margin: 4px 0;
+}
+.bar-bottom {
+  width: 5px;
+  height: 2px;
+  background-color: rgb(161, 159, 159);
+  margin: 4px 0;
+}
+.sort-text {
+  cursor: pointer;
+}
+.comment-form-container {
+  margin-top: 24px;
+}
+.user-avatar-container {
+  display: inline-block;
+  height: 48px;
+  width: 5%;
+}
+.user {
+  border-radius: 50%;
+}
+.user-comment-container {
+  padding-left: 10px;
+}
+.user-comment-input {
+  vertical-align: top;
+  border: 0;
+  border-bottom: 0.5px solid rgb(186, 186, 186);
+  outline: none;
+  width: 92%;
+  text-align: top;
+  background-color: #fafafa;
+}
+/* COMMENTS */
+.comment-block {
+  margin: 20px 0;
+}
+.commenter-avatar-container {
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 5%;
+}
+.commenter-avatar {
+  cursor: pointer;
+  border-radius: 50%;
+}
+.comment-wrapper {
+  padding-left: 60px;
+  display: inline-block;
+}
+.commenter-username {
+  cursor: pointer;
+
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.comment-date {
+  margin-left: 5px;
+  color: #606060;
+  font-size: 13px;
+}
+.commenter-comment {
+  font-size: 15px;
+}
+.comment-toolbar {
+  margin: 5px 0;
+}
+.thumbs-up {
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+}
+.thumbs-down {
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+}
+.score {
+  color: #606060;
+  padding-right: 25px;
+  padding-left: 5px;
+}
+.reply-button {
+  cursor: pointer;
+
+  color: #909090;
+
+  margin-left: 20px;
+}
+.comment-action-button {
+}
+.sub-comments {
+  cursor: pointer;
+
+  margin: 5px 0 0 56px;
+}
+.down-arrow {
+  cursor: pointer;
+
+  margin-left: 4px;
+  font-size: 24px;
+}
+
 aside {
   position: absolute;
   right: 0;
