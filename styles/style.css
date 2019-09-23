@@ -67,7 +67,6 @@ sup {
 
 form-container {
   display: inline-block;
-
   margin: 0 40px;
   width: 50%;
   height: 100%;
@@ -98,6 +97,11 @@ form-container {
 .search-button:focus {
   outline: 0.5px solid rgb(101, 60, 248);
 }
+.search-icon {
+  vertical-align: bottom;
+  width: 22px;
+  height: 22px;
+}
 .right-nav {
   float: right;
   width: 24%;
@@ -114,8 +118,7 @@ main {
 section {
   position: absolute;
   width: 65%;
-  margin-left: 24px;
-  padding: 24px 24px 0 0;
+  padding: 24px 24px 0 24px;
   background-color: hsl(0, 0%, 98%);
   float: right;
   height: 2000px;
@@ -253,6 +256,7 @@ h1 {
   width: 92%;
   text-align: top;
   background-color: #fafafa;
+  cursor: pointer;
 }
 /* COMMENTS */
 .comment-block {
@@ -274,7 +278,6 @@ h1 {
 }
 .commenter-username {
   cursor: pointer;
-
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 15px;
@@ -292,13 +295,11 @@ h1 {
 }
 .thumbs-up {
   cursor: pointer;
-
   width: 16px;
   height: 16px;
 }
 .thumbs-down {
   cursor: pointer;
-
   width: 16px;
   height: 16px;
 }
@@ -306,28 +307,26 @@ h1 {
   color: #606060;
   padding-right: 25px;
   padding-left: 5px;
+  font-size: 13px;
+  line-height: 10px;
 }
 .reply-button {
   cursor: pointer;
-
   color: #909090;
-
   margin-left: 20px;
 }
-.comment-action-button {
-}
+
 .sub-comments {
   cursor: pointer;
-
   margin: 5px 0 0 56px;
 }
 .down-arrow {
   cursor: pointer;
-
   margin-left: 4px;
   font-size: 24px;
 }
 
+/* ASIDE */
 aside {
   position: absolute;
   right: 0;
@@ -336,7 +335,43 @@ aside {
   background-color: hsl(0, 0%, 98%);
   height: 2000px;
 }
-
+.upnext-button {
+  vertical-align: center;
+}
+#autoplay-container {
+  margin-bottom: 16px;
+  border-bottom: 0.5px solid rgb(186, 186, 186);
+}
+.autoplay-button {
+  float: right;
+}
+.autoplay-video {
+  margin: 16px 0;
+}
+.metadata {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 24px;
+  width: 200px;
+  cursor: pointer;
+}
+.autoplay-video-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.autoplay-video-author {
+  color: #606060;
+  font-size: 13px;
+  padding-top: 4px;
+}
+.autoplay-video-views {
+  color: #606060;
+  font-size: 13px;
+  padding-top: 4px;
+}
+.sidebar-video {
+  margin-bottom: 10px;
+}
 /** 
 *** Footer ***
 */
